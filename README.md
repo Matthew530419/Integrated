@@ -2,9 +2,7 @@
 
 ### Connection with Cmder, vscode, Github
 
-Often Used Command
-
-Using Cmder
+**Often used command Using Cmder**
 |Command|Descriotion|
 |--|--|
 |Connection between git and vscode using comder|git config --global core.editor "code --wait"|
@@ -30,7 +28,7 @@ Using Cmder
 |Clone github to local area|git clone "github address"|
 |Upload code in github|git push|
 
-Sequence
+**Sequence**
 
 - Make user.name in github
   `git config --global user.name "github ID"`
@@ -49,3 +47,11 @@ Sequence
   `git clone "github address"`
 * Upload code in github
   `git push`
+
+**Resolve failure**
+
+- Fatal : authentication failed error when git push after git commit
+  - occured in creating new repository first time and I didn't change information of user
+  - This situation maybe occured when creating and deleting repository several times 
+- Countmeasure : input code below
+  `git config --system --unset credential.helper`
