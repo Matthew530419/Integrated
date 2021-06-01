@@ -51,7 +51,8 @@
 **Resolve failure**
 
 - Fatal : authentication failed error when git push after git commit
-  - occured in creating new repository first time and I didn't change information of user
-  - This situation maybe occured when creating and deleting repository several times 
+  - occurred in creating new repository first time and I didn't change information of user
+  - This situation normally occurred when changed information of user
+  - In my case, this situation maybe occurred when creating and deleting repository several times
 - Countmeasure : input code below
   `git config --system --unset credential.helper`
